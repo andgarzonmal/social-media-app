@@ -9,7 +9,6 @@ import { client } from '../client';
 const Login = () => {
   const navigate = useNavigate();
 
-  // WAY ONE 
   
   const responseGoogle = async (response) => {
     localStorage.setItem('user', JSON.stringify(jwt_decode(response.credential)))
